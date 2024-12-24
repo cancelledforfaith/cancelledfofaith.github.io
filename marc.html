@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stand with Marc: Fight for Faith and Justice</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </head>
 <body>
 
@@ -55,6 +56,25 @@
             <h2>About Us</h2>
             <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1041349747?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Stand With Marc"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
             <p>We are a group of individuals dedicated to supporting Marc and advocating for the rights of people of faith.</p>
+            <br/>
+            <div id="mshare">
+  <strong>Share on Social Media</strong>
+  <br/><br/>
+  <a id="facebook_share_btn" target="_blank">
+                <ion-icon name="logo-facebook" style="color:rgb(24,115,235);font-size: 22px;" class="ion-icon"></ion-icon>
+            </a>
+<br/><br/>
+            <!-- Trash icon by Icons8 -->
+            <a id="twitter_share_btn" target="_blank">
+                <ion-icon name="logo-twitter" style="color: #00aced;font-size: 22px;" class="ion-icon"></ion-icon>
+            </a>
+<br/><br/>
+            <!-- Invisible icon by Icons8 -->
+            <a id="whatsapp_share_btn" target="_blank">
+                <ion-icon name="logo-whatsapp" style="color: rgb(36,204,99);font-size: 22px;" class="ion-icon"></ion-icon>
+            </a>
+
+</div>
         </div>
     </section>
 
@@ -62,7 +82,20 @@
         <p>&copy; 2024 Stand with Marc</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="text/javascript">
+  var a = document.getElementById("facebook_share_btn");
+  var b = document.getElementById("twitter_share_btn");
+  var c = document.getElementById("whatsapp_share_btn");
+  a.href = "https://www.facebook.com/sharer.php?u=" + window.location.href;
+  b.href = "https://twitter.com/intent/tweet?url=" + window.location.href;
+  c.href = "whatsapp://send?text=" + window.location.href;
+  var aa = document.getElementById("facebook_share_btn-c");
+  var bb = document.getElementById("twitter_share_btn-c");
+  var cc = document.getElementById("whatsapp_share_btn-c");
+  aa.href = "https://www.facebook.com/sharer.php?u=" + window.location.href;
+  bb.href = "https://twitter.com/intent/tweet?url=" + window.location.href;
+  cc.href = "whatsapp://send?text=" + window.location.href;
+</script>
 
 </body>
 </html>
